@@ -1,4 +1,4 @@
-# Using SvelteKit For Web Scraping
+# Visualize GitHub Contributions In 3D With Svelte
 
 Learn how to use Threlte to make a 3D visualization of your GitHub contributions.
 
