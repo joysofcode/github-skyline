@@ -3,7 +3,7 @@
 	import { tweened } from 'svelte/motion'
 	import { quadInOut } from 'svelte/easing'
 	import { T } from '@threlte/core'
-	import { Center, Grid, OrbitControls } from '@threlte/extras'
+	import { Align, Grid, OrbitControls } from '@threlte/extras'
 	import type { Contributions } from '$lib/types'
 
 	let contributions: Contributions[] = []
@@ -57,7 +57,7 @@
 <T.DirectionalLight position={[0, 200, 200]} intensity={2} color="#fff" />
 <T.DirectionalLight position={[0, 200, -200]} intensity={2} color="#fff" />
 
-<Center autoCenter position.y={40}>
+<Align auto position.y={40}>
 	{#each contributions as row, i}
 		{#each row as day, j}
 			{#if day}
@@ -72,4 +72,4 @@
 			{/if}
 		{/each}
 	{/each}
-</Center>
+</Align>
